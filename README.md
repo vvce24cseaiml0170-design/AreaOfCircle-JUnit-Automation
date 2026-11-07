@@ -1,14 +1,14 @@
-# SeleniumLocalWebTest — Automated Testing Framework & Containerized CI/CD Pipeline
+# Area of Circle JUnit Automation — Automated Testing Framework & Containerized CI/CD Pipeline
 
-![GitHub Actions Workflow Status](https://img.shields.io/github/actions/workflow/status/vvce24cseaiml0170-design/SeleniumLocalWebTest/selenium-tests.yml?branch=main&label=CI%2FCD%20Pipeline&logo=github)
-![Docker Pulls](https://img.shields.io/badge/docker%20hub-shreyas050906%2Fselenium--testng--automation-blue?logo=docker)
+![GitHub Actions Workflow Status](https://img.shields.io/github/actions/workflow/status/vvce24cseaiml0170-design/AreaOfCircle-JUnit-Automation/selenium-tests.yml?branch=main&label=CI%2FCD%20Pipeline&logo=github)
+![Docker Pulls](https://img.shields.io/badge/docker%20hub-shreyas050906%2Farea--of--circle--junit--automation-blue?logo=docker)
 ![Java Version](https://img.shields.io/badge/Java-17-orange?logo=openjdk)
 ![Selenium Version](https://img.shields.io/badge/Selenium-4.25.0-green?logo=selenium)
 ![TestNG Version](https://img.shields.io/badge/TestNG-7.10.2-red)
 
 ## 📌 Project Overview
 
-**SeleniumLocalWebTest** is an end-to-end automated testing and continuous integration/continuous deployment (CI/CD) framework. It automates functional UI regression testing for a web login application using **Selenium WebDriver** and **TestNG**, packages the framework into an isolated **multi-stage Docker container**, and deploys the container image directly to **Docker Hub** upon every successful build on the `main` branch.
+**Area of Circle JUnit Automation** is an end-to-end automated testing and continuous integration/continuous deployment (CI/CD) framework. It automates functional UI regression testing for a web login application using **Selenium WebDriver** and **TestNG**, packages the framework into an isolated **multi-stage Docker container**, and deploys the container image directly to **Docker Hub** upon every successful build on the `main` branch.
 
 ---
 
@@ -29,7 +29,7 @@
 ## 📂 Project Structure
 
 ```text
-SeleniumLocalWebTest/
+AreaOfCircle-JUnit-Automation/
 │----- Dockerfile                              # Multi-stage Docker build recipe
 ├── pom.xml                                 # Maven dependencies and surefire configuration
 ├── testng.xml                              # TestNG suite runner XML configuration
@@ -85,12 +85,12 @@ The project uses a two-stage Docker blueprint:
 
 ### Build the Docker Image Locally
 ```bash
-docker build -t shreyas050906/selenium-testng-automation:latest .
+docker build -t shreyas050906/area-of-circle-junit-automation:latest .
 ```
 
 ### Run the Container
 ```bash
-docker run --rm shreyas050906/selenium-testng-automation:latest
+docker run --rm shreyas050906/area-of-circle-junit-automation:latest
 ```
 
 ---
@@ -119,7 +119,7 @@ flowchart LR
 
 ## 📦 Docker Hub Registry Details
 
-- **Registry Repository**: [`shreyas050906/selenium-testng-automation`](https://hub.docker.com/r/shreyas050906/selenium-testng-automation)
+- **Registry Repository**: [`shreyas050906/area-of-circle-junit-automation`](https://hub.docker.com/r/shreyas050906/area-of-circle-junit-automation)
 - **Tags Published**:
   - `latest`: Tracks the most recent successful build on `main`.
   - `<commit-sha>`: Immutable snapshot tag tied to each specific Git commit.
