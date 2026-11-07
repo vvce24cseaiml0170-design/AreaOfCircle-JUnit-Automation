@@ -39,6 +39,15 @@ jobs:
     - name: Run Selenium tests
       run: mvn clean test
 
+    # Step 6: Archive Test Results and Reports
+    - name: Archive Test Results and Reports
+      if: always()
+      uses: actions/upload-artifact@v4
+      with:
+        name: testng-surefire-reports
+        path: target/surefire-reports/
+        retention-days: 7
+
   # JOB 2: Build and Publish Docker Image
   # Runs only after successful Selenium tests
   build-and-publish-docker:
